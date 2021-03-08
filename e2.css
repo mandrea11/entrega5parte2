@@ -1,0 +1,33 @@
+.este
+{
+	position: absolute;
+	text-align: center;
+	border-radius: 10px;
+	width: 25%;
+	height: 22%;
+	background-color: #FA5882;
+	top: 20%;
+	left: 35%;
+	
+}
+body
+{
+	background-color: #F6CECE;
+}
+.punto2
+{
+
+    position: absolute;
+	display: block;
+	text-decoration: none;
+	top: 70%;
+	background-color: #F7819F;
+	border-radius: 4px 3px 6px / 2px 4px;
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	border-style: dashed;
+	font-family: arial;
+	font-size:12px;
+	left: 70%;
+}

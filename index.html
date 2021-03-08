@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parte 2 entrega 5</title>
+	<link rel="stylesheet" type="text/css" href="e2.css">
+	<script>
+		x=[];
+	</script>
+</head>
+<body>
+	<center>
+		<div class="este">
+			<br>
+		<input type="text" placeholder="Ingresa numeros" id="in">
+		<br><br>
+		<input type="button" value="Ingresar" onclick="ingre();">
+		<br><br>
+		<button onclick="maximo();">Ver El Número Máximo </button>
+	</center></div>
+	<div id="div"></div>
+	<script>
+		function ingre()
+		{
+			x[x.length]=document.getElementById("in").value;
+			console.log(x);
+			console.log(x.length);
+			document.getElementById("in").value="";
+
+			if(x.length>5)
+			{
+				alert("ya ingresó los 5 valores necesorios");
+				x.pop();
+				console.log(x);
+				console.log(x.length);
+			}
+		}
+
+		function maximo()
+		{
+			y=Math.max(...x);
+			document.getElementById("div").innerHTML=y;
+		}
+	</script>
+
+	<div class="punto3" id="punto3" ><a href="https://mandrea11.github.io/entrega5punto3/."><center><h1>ir al siguiente punto</h1></a></div>
+</body>
+</html>
